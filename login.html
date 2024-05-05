@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login @GEC Jamui</title>
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+    .login_heading {
+        text-align: center;
+        font-family: "Roboto Condensed", sans-serif;
+    }
+
+    .login_heading h1 {
+        letter-spacing: 2px;
+    }
+
+    .login_form {
+        display: flex;
+        justify-content: center;
+        /* gap: 50px; */
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+
+    .login_animation img {
+        margin-left: -40px;
+        margin-right: -70px;
+        z-index: 1;
+    }
+
+
+    .login_container {
+        width: 300px;
+        /* margin: 0 auto; */
+        border: 1.5px solid black;
+        border-radius: 5px;
+        box-shadow: 0px 0px 8px;
+        padding: 20px 05px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        font-family: "Roboto Condensed", sans-serif;
+        z-index: 2;
+    }
+
+    .college_logo img {
+        width: 100px;
+        height: 100px;
+        margin-bottom: -20px;
+    }
+
+    .login_heading h2 {
+        letter-spacing: 2px;
+    }
+
+    .email,
+    .password {
+        display: flex;
+        flex-direction: column;
+        padding: 5px 0;
+    }
+
+    .email input {
+        width: 220px;
+        height: 25px;
+        border-radius: 4px;
+        border: 1.5px solid black;
+    }
+
+    .email input:hover {
+        border: 1.5px solid rgba(0, 115, 255, 0.863);
+    }
+
+    .password input {
+        width: 220px;
+        height: 25px;
+        border-radius: 4px;
+        border: 1.5px solid black;
+    }
+
+    .password input:hover {
+        border: 1.5px solid rgba(0, 115, 255, 0.863);
+    }
+
+    .email_continue_btn {
+        padding: 5px 0;
+    }
+
+    .email_continue_btn a {
+        color: #ffffff;
+        text-decoration: none;
+        background-color: rgba(0, 115, 255, 0.863);
+        border-radius: 4px;
+        padding: 5px 50px;
+    }
+
+    .email_continue_btn a:hover {
+        background-color: rgb(7, 101, 216);
+    }
+
+    .forgot_password a {
+        color: rgb(121, 7, 227);
+        font-size: 15px;
+        text-decoration: none;
+    }
+
+    .forgot_password a:hover {
+        color: rgb(96, 6, 180);
+    }
+
+    .create_account a {
+        color: rgb(0, 0, 0);
+        font-size: 15px;
+        text-decoration: none;
+        cursor: auto;
+    }
+
+    .create_account a span {
+        color: rgb(121, 7, 227);
+        cursor: pointer;
+    }
+
+    .create_account a span:hover {
+        color: rgb(96, 6, 180);
+    }
+
+    @media (max-width: 786px) {
+        .login_animation {
+            display: none;
+        }
+
+        .login_heading {
+            padding: 0 20px;
+        }
+    }
+</style>
+
+<body>
+    <div class="login_heading">
+        <h1>
+            Login With Your Valid Credential
+        </h1>
+        <p>Kya kroge login krke? kam dhandha to hai nhi kuchh!!</p>
+    </div>
+
+
+    <div class="login_form">
+        <div class="login_container">
+            <div class="college_logo">
+                <img src="./GEC_Jamui_logo.png" alt="">
+            </div>
+            <div class="login_heading">
+                <h2>Login To GEC Jamui</h2>
+            </div>
+            <div class="email">
+                <label for="">Email Dal De Bhai &#128521;</label>
+                <input type="email" placeholder="Enter Your Email">
+            </div>
+            <div class="password">
+                <label for="">Password Bhi Dal De &#128543;</label>
+                <input type="password" placeholder="Enter Your Password">
+            </div>
+            <div class="email_continue_btn">
+                <a href="">Continue With Email</a>
+            </div>
+            <div class="forgot_password">
+                <a target="_blank" href="./password.html">Password Bhul Gyaa ?</a>
+            </div>
+            <div class="create_account">
+                <a href="">New To GEC Jamui ? <span>Bhar Me Jao</span></a>
+            </div>
+        </div>
+
+        <div class="login_animation">
+            <img src="./man_character.png" alt="">
+        </div>
+    </div>
+</body>
+
+</html>
